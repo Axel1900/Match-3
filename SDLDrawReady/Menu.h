@@ -14,7 +14,7 @@ private:
 	Image fondo;
 	Text* titulo;
 	Text* subtitulo;
-	float tituloX;       // X para que queden centrados (se calcula una vez)
+	float tituloX;     
 	float subtituloX;
 	Boton botonJugar;
 	Boton botonSalir;

@@ -2,14 +2,14 @@
 #include "GameState.h"
 #include "Escena.h"
 #include "Platform.h"
-#include "Stack.h"  
+#include "Stack.h"
 
 class GameState;
 
 class GameStateManager
 {
 private:
-	Stack<Escena*> states; 
+	Stack<Escena*> states;   
 	Platform* platform;
 
 	Escena* pushPendiente;
@@ -21,10 +21,10 @@ public:
 	GameStateManager();
 	~GameStateManager();
 	void GameLoop();
-	void SetState(Escena* state);  
-	void RealaseState();  
+	void SetState(Escena* state); 
+	void RealaseState();     
 
 	void PedirPush(Escena* state); 
-	void PedirPop(int cuantas);
-	void PedirSalir(); 
+	void PedirPop(int cuantas);  
+	void PedirSalir();  
 };

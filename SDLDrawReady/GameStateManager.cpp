@@ -65,9 +65,9 @@ void GameStateManager::SetState(Escena* state)
 
 void GameStateManager::RealaseState()
 {
-	if (states.IsEmpty()) return; 
+	if (states.IsEmpty()) return;
 
-	Escena* escena = states.Pop(); 
+	Escena* escena = states.Pop();  
 	escena->Close();
 	delete escena;
 }

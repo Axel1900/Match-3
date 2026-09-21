@@ -215,6 +215,7 @@ xcopy "$(ProjectDir)Assets" "$(OutDir)Assets\" /y /d /i /e</Command>
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="TNode.h" />
+    <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Escena.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameStateManager.h" />
