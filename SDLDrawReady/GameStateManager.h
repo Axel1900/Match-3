@@ -2,7 +2,7 @@
 #include "GameState.h"
 #include "Escena.h"
 #include "Platform.h"
-#include "Stack.h"
+#include "Stack.h" 
 
 class GameState;
 
