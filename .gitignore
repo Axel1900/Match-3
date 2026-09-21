@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+# Carpetas de Visual Studio
+.vs/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Carpetas de compilación (Solución)
+Debug/
+Release/
+x64/
+x86/
+Win32/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Carpetas de compilación (Proyecto)
+SDLDrawReady/Debug/
+SDLDrawReady/Release/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Archivos locales de usuario
+*.user
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Recursos pesados (Opcional, según lo requieras)
+Assets/
