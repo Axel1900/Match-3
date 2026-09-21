@@ -11,7 +11,7 @@ private:
 	float y;
 	Image imagen;
 	Text* texto;
-	float textoX; 
+	float textoX;
 	float textoY;
 
 	void CentrarTexto(std::string mensaje);

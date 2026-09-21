@@ -195,6 +195,8 @@ xcopy "$(ProjectDir)Assets" "$(OutDir)Assets\" /y /d /i /e</Command>
     <ClCompile Include="Boton.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Gameplay.cpp" />
+    <ClCompile Include="Pausa.cpp" />
+    <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="GameStateManager.cpp" />
     <ClCompile Include="Gif.cpp" />
@@ -212,10 +214,14 @@ xcopy "$(ProjectDir)Assets" "$(OutDir)Assets\" /y /d /i /e</Command>
     <ClInclude Include="Config.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Gameplay.h" />
+    <ClInclude Include="Pausa.h" />
+    <ClInclude Include="GameOver.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="TNode.h" />
     <ClInclude Include="LinkedQueue.h" />
+    <ClInclude Include="RingBuffer.h" />
+    <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="Escena.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameStateManager.h" />

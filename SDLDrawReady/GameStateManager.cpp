@@ -20,7 +20,7 @@ GameStateManager::~GameStateManager()
 	{
 		RealaseState();
 	}
-	delete pushPendiente; 
+	delete pushPendiente;
 	delete platform;
 }
 
@@ -33,7 +33,7 @@ void GameStateManager::GameLoop()
 			break;
 		}
 
-		Escena* state = states.Top();
+		Escena* state = states.Top(); 
 		platform->CheckEvent(state, &GameState::Input);
 		state->Update();
 		state->Draw();
@@ -60,14 +60,14 @@ void GameStateManager::AplicarCambiosPendientes()
 void GameStateManager::SetState(Escena* state)
 {
 	state->Init(platform, this);
-	states.Push(state); 
+	states.Push(state);
 }
 
 void GameStateManager::RealaseState()
 {
-	if (states.IsEmpty()) return;
+	if (states.IsEmpty()) return; 
 
-	Escena* escena = states.Pop();  
+	Escena* escena = states.Pop(); 
 	escena->Close();
 	delete escena;
 }

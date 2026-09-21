@@ -66,7 +66,7 @@ bool Menu::Input(ListaT<int>* keyDowns, ListaT<int>* keyUps, bool* leftclick, fl
 	{
 		if (botonJugar.MouseEncima(*mouseX, *mouseY))
 		{
-			manager->PedirPush(new Gameplay());
+			manager->PedirPush(new Gameplay()); 
 		}
 		if (botonSalir.MouseEncima(*mouseX, *mouseY))
 		{
@@ -78,7 +78,7 @@ bool Menu::Input(ListaT<int>* keyDowns, ListaT<int>* keyUps, bool* leftclick, fl
 
 void Menu::Update()
 {
-
+	
 }
 
 void Menu::Close()

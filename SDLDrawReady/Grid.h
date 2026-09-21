@@ -41,14 +41,13 @@ public:
     int GetFilas();
     int GetColumnas();
     int FloodFill(int fila, int columna);
+    bool FueVisitada(int fila, int columna);   
     void Print();
 };
 
 template <class T>
 Grid<T>::Grid(int filas, int columnas)
 {
-    // Los punteros arrancan en nullptr para que nada truene antes de
-    // que reserves la memoria. NO borres estas dos lineas.
     _celdas = nullptr;
     _visitadas = nullptr;
     _filas = filas;
@@ -140,6 +139,15 @@ int Grid<T>::FloodRecursivo(int fila, int columna, T objetivo)
         + FloodRecursivo(fila + 1, columna, objetivo)
         + FloodRecursivo(fila, columna - 1, objetivo)
         + FloodRecursivo(fila, columna + 1, objetivo);
+}
+
+template <class T>
+bool Grid<T>::FueVisitada(int fila, int columna)
+{
+    if (fila < 0 || fila >= _filas || columna < 0 || columna >= _columnas)
+        return false;
+
+    return _visitadas[fila][columna];
 }
 
 template <class T>

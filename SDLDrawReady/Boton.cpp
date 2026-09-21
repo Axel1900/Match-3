@@ -73,7 +73,7 @@ bool Boton::MouseEncima(float mouseX, float mouseY)
 
 void MedirTexto(std::string mensaje, int tamano, float& ancho, float& alto)
 {
-	TTF_Init();
+	TTF_Init(); 
 
 	TTF_Font* fuente = TTF_OpenFont(RUTA_FUENTE.c_str(), (float)tamano);
 	if (fuente == nullptr)
